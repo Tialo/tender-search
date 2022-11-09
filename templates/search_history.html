@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>История</title>
+
+</head>
+<body>
+<header>
+    <div class="header">
+        История поиска
+    </div>
+</header>
+<div>
+    <form method="post">
+            {% for item in val %}
+                <li class="history" >
+                     {{item}}
+                </li>
+             {% endfor %}
+    </form>
+        </div>
+</body>
+</html>
+<style>
+    .history{
+        color:rgb(38, 75, 130);
+        font-size: 26px;
+        word-break:break-word;
+        font-family: "Georgia";
+        font-weight: 500;
+        letter-spacing: 2px;
+        width: 90%;
+        position: relative;
+        margin-top: 2%;
+        margin-bottom : 2%;
+        margin-left: 15%;
+        text-align: left;
+        line-height: 1;
+    }
+    .header{
+        font-size: 50px;
+        color:rgb(38, 75, 130);
+        word-break:break-word;
+        font-family: "Georgia";
+        font-weight: 900;
+        letter-spacing: 1px;
+        width: 90%;
+        position: relative;
+        margin-top: 2%;
+        margin-bottom : 0;
+        margin-left: 5%;
+        text-align: center;
+        line-height: 1;
+    }
+</style>
